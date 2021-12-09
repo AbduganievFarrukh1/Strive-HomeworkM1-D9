@@ -1,103 +1,24 @@
 body {
-  background-color: rgb(22, 149, 54);
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  max-width: 1280px;
-  margin: 0 auto;
+  background-color: rgba(139, 0, 139, 0.452);
 }
-
-h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 20px;
-  color: #111;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#month-container {
-  border-style: solid;
-  border-width: 3px;
-  border-color: #4a4a4a;
-  padding: 20px;
-  border-radius: 10px;
+.bingo-cell,
+.bingo-cell-board {
   display: inline-block;
-  width: 50%;
-}
-
-.day {
-  background-color: rgb(26, 26, 26);
-  display: inline-block;
-  width: 12.5%;
-  min-height: 64px;
-  text-align: center;
-  padding-top: 32px;
-  font-size: x-large;
-  border-color: rgb(49, 49, 49);
-  border-style: solid;
-  border-width: 2px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px blue solid;
   margin: 2px;
-  border-radius: 10px;
-  cursor: pointer;
 }
-
-.selected {
-  border-color: gray;
-  background-color: #474747;
-}
-
-.day:hover {
-  border-color: gray;
-}
-
-/* MEETINGS */
-
-#meeting-container {
-  vertical-align: top;
+.bingo-cell span {
   display: inline-block;
-  width: 35%;
-  min-height: 200px;
-  text-align: center;
+  margin-top: 10px;
 }
-#meeting-container h2 {
-  color: #00db71;
-  border-bottom: solid 3px #292929;
-  padding-bottom: 16px;
-  padding-top: 24px;
-}
-
-#meeting-creation {
-  padding: 4px;
-}
-
-#meeting-creation input {
-  height: 32px;
-  background-color: #0f0f0f;
-  border: solid 3px #00db71;
-  color: white;
-  padding: 8px;
-  border-radius: 4px;
-  font-size: larger;
-}
-
-#meeting-time {
-  width: 80px;
-}
-
-#meeting-description {
-  width: 200px;
-}
-
-#meeting-creation input[type="button"] {
-  margin-left: 10px;
-  width: 92px;
-  height: 54px;
-  color: rgb(32, 32, 32);
-  background-color: #00db71;
+.matching-cell,
+.matching-cell-ingame {
+  background-color: red;
+  border: 1px green double;
+  padding: 5px;
   font-weight: bolder;
-}
-
-#meetings-for-the-day li {
-  text-align: left;
-  font-size: larger;
+  color: blue;
 }

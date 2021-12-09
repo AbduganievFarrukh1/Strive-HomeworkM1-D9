@@ -3,52 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bingo Board</title>
-
     <link rel="stylesheet" href="day9.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <script src="day9.js"></script>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <h1>Bingo.</h1>
+      <button onclick="randomizeNumber()" style="margin: 20px; cursor: pointer">
+        Get random number
+      </button>
+      <h1>Bingo Board.</h1>
+    </div>
 
-    <h1>Bingo Board</h1>
-    <div id="month-container"></div>
-
-    <!-- MEETING CREATION -->
-    <div id="meeting-container">
-      <h2 id="meeting-title">Meetings for the day</h2>
-
-      <div id="meeting-creation">
-        <input type="time" id="meeting-time" value="09:00" />
-        <input
-          type="text"
-          id="meeting-description"
-          placeholder="insert description here"
-        />
-        <input type="button" value="Create" onclick="createNewMeeting()" />
+    <div class="main-wrap">
+      <div
+        id="bingo-board"
+        style="
+          text-align: center;
+          border: 1px black dashed;
+          padding: 5px 0px 5px 0px;
+        "
+      >
+        <!-- bingo cells going here -->
       </div>
+      <hr />
 
-      <ul id="meetings-for-the-day">
-        <!-- The list of the meetings will be generated programmatically -->
-      </ul>
+      <div
+        id="playing-fields"
+        style="
+          text-align: center;
+          border: 1px black dashed;
+          padding: 5px 0px 5px 0px;
+        "
+      >
+        <button onclick="createPlayingField()" id="creating-button">
+          Create a playing field
+        </button>
+        <!-- playing field goind here -->
+      </div>
     </div>
-    <div id="button">
-      <button onclick="getRandomNum()">Random Number</button>
-    </div>
-
+    ;
     <br />
-    <br />
-    <br />
-
-    <div id="reveal">
-      <button onclick="show()">Numbers Called</button>
-    </div>
+    <a href="/index.html"> Back to home</a>
+    <script src="day9.js"></script>
   </body>
 </html>

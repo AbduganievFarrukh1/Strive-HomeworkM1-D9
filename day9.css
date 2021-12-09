@@ -36,10 +36,14 @@ body {
   transform: scale(0.98);
 }
 .item {
+  flex-wrap: wrap;
   position: absolute;
   display: inline-flex;
   position: relative;
   width: 600px;
   height: 600px;
   margin: 15px;
+}
+.item:hover {
+  transform: scale(0.98);
 }

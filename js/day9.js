@@ -38,7 +38,7 @@ const randomizeNumber = function () {
     }
   }
   if (winningCondition.length > 23) {
-    alert("YOU WON!!! NOW START ALL OVER AGAIN");
+    alert("YOU WON 1000$!!! If you want more money play again!");
     location.reload();
   } else {
     console.log(

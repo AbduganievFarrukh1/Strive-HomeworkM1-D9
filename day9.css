@@ -22,3 +22,16 @@ body {
   font-weight: bolder;
   color: grey;
 }
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: lightslategray;
+  color: lightgreen;
+  text-decoration: lightgreen;
+  padding: 15px 35px;
+  margin: 20px 0;
+  border: 1;
+}
+.btn:hover {
+  transform: scale(0.98);
+}

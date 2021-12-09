@@ -10,9 +10,6 @@ const createDays = function() {
 
     // Find the parent for the days (= month container)
     let monthContainerNode = document.getElementById("month-container")
-
-    // TODO: Get the current month, so we can know how many days we need
-    // (just for now, we assume we are in December and we have 31 days)
     let daysInTheMonth = 76
 
     // Within a loop, we create as many days as we need

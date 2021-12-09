@@ -26,11 +26,11 @@ body {
   cursor: pointer;
   display: inline-block;
   background: lightslategray;
-  color: lightgreen;
-  text-decoration: lightgreen;
+  color: #111;
+  text-decoration: #111;
   padding: 15px 35px;
-  margin: 20px 0;
-  border: 1;
+  margin: 10px 0;
+  border: 2;
 }
 .btn:hover {
   transform: scale(0.98);

@@ -1,46 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="day9.css" />
-    <title>Bingo board</title>
-  </head>
-  <body>
-    <!-- Create programmatically (using JS) a bingo board with 76 cells, numbered
-    from 1 to 76. Create a button to randomize a number from 1 to 76. 
-    The cell with same number should be highlighted in some way on the bingo board.
+<html>
 
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<meta charset="utf-8" />
 
-             //---------Extra:--------------//
+<title>Bingo</title>
 
+<link rel="stylesheet" type="text/css" href="bingocss.css" />
 
-    EXTRA: - Make sure to always select a new number (eg. avoid getting the
-    number 10 multiple times). - Create a user board with 24 randomized numbers
-    that highlights as the main board does. - Let the user choose how many user
-    boards he's willing to play with and generate them before starting to play. -->
-    <script src="day9.js"></script>
-    <h1>Bingo Board</h1>
-    <div id="number">0</div>
-    <br />
-    <div id="text">Chart</div>
-    <br />
-    <div id="buttons"></div>
+<script type="text/javascript" src="scripts/bingojs.js"></script>
 
-    <br />
-    <br />
-    <br />
-    <p>TICKET</p>
-    <table>
-      <tr>
-        <td id="td1">45</td>
-        <td id="td2">33</td>
-      </tr>
-      <tr>
-        <td id="td3">65</td>
-        <td id="td4">45</td>
-      </tr>
-    </table>
-  </body>
+</head>
+
+<body onload="newCard()">
+
+	<div id="container">
+    <div id="header">
+      <h1>Create a BINGO Card</h1>
+    </div>
+	<div id="content">
+		<table id="bingotable">
+			<tr>
+				<th class="orange">B</th>
+				<th class="orange">I</th>
+				<th class="orange">N</th>
+				<th class="orange">G</th>
+				<th class="orange">O</th>
+			</tr>
+			<tr>
+				<td id="square0"> &nbsp;</td>
+				<td id="square1"> &nbsp;</td>
+				<td id="square2"> &nbsp;</td>
+				<td id="square3"> &nbsp;</td>
+				<td id="square4"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square5"> &nbsp;</td>
+				<td id="square6"> &nbsp;</td>
+				<td id="square7"> &nbsp;</td>
+				<td id="square8"> &nbsp;</td>
+				<td id="square9"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square10"> &nbsp;</td>
+				<td id="square11"> &nbsp;</td>
+				<td id="squarefree"> FREE</td>
+				<td id="square12"> &nbsp;</td>
+				<td id="square13"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square14"> &nbsp;</td>
+				<td id="square15"> &nbsp;</td>
+				<td id="square16"> &nbsp;</td>
+				<td id="square17"> &nbsp;</td>
+				<td id="square18"> &nbsp;</td>
+			</tr>
+			<tr>
+				<td id="square19"> &nbsp;</td>
+				<td id="square20"> &nbsp;</td>
+				<td id="square21"> &nbsp;</td>
+				<td id="square22"> &nbsp;</td>
+				<td id="square23"> &nbsp;</td>
+			</tr>
+		</table>
+	</div>
+	
+<p><a href="#" onclick="anotherCard()">Click here</a> to create a new card</p>
+
+</body>
+
 </html>
